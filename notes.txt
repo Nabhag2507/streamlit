@@ -1,0 +1,44 @@
+streamlit is a framework works on python code, python's declarative code.
+doesn't need html/css/js only pure python.
+
+-- related to text:
+    st.title("")
+    st.subheader("")
+    st.text("")
+    st.write("")
+    st.success("")
+     - this will generate green background text
+
+
+-- drop down: 
+    st.selectbox("Select options", ["first", "second", "third"])
+    - can also store this into any variable
+
+    variable = st.selectbox("Select options", ["first", "second", "third"])
+    on screen it will still give same result
+
+-- radio button:
+    radio_button = st.radio("Choose tea base : ", ["milk", "water", "something"])
+    same as drop down
+
+-- slider:
+    st.slider("Sugar level", 0, 10, 2)
+    0 and 10 are range 10 included and as for 2 it is by default selected value
+
+-- controlled input:
+    st.number_input("How many cups do you want?", min_value = 1, max_value = 10)
+
+-- text input:
+    st.text_input("Enter your name")
+
+-- date input
+    st.date_input("Enter your dob")
+
+-- conditions:
+    if (st.button):
+        do something
+    - will do process if the button is clicked
+
+    if (st.checkbox("click me")):
+        do something
+    - will do process if the checkbox is ticked
