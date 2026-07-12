@@ -6,9 +6,22 @@ doesn't need html/css/js only pure python.
     st.subheader("")
     st.text("")
     st.write("")
-    st.success("")
      - this will generate green background text
 
+-- boxes:
+    st.success("")
+        - light green background text
+    st.info
+        - light blue background text
+    st.
+
+-- markdown
+        - st.markdown("---")
+            - same as st.divider()
+            - this will generate a horizontal thin line
+        - st.markdown("#")
+            - heading, can also use ##, ### for smaller headings
+        - st.markdown("> blockquote")
 
 -- drop down: 
     st.selectbox("Select options", ["first", "second", "third"])
@@ -16,6 +29,10 @@ doesn't need html/css/js only pure python.
 
     variable = st.selectbox("Select options", ["first", "second", "third"])
     on screen it will still give same result
+
+-- multiselect:
+    st.multiselect("", [])
+        - works same as select drop down but here we can select more then 1 item where as in selectbox only one is allowed
 
 -- radio button:
     radio_button = st.radio("Choose tea base : ", ["milk", "water", "something"])
@@ -33,6 +50,32 @@ doesn't need html/css/js only pure python.
 
 -- date input
     st.date_input("Enter your dob")
+
+-- sidebar:
+    for sidebar above all things work same as in normal 
+    just use st.sidebar.______
+
+-- image:
+    st.image("image address", width = )
+
+-- columns:
+    c1, c2 = st.columns(2)
+
+    with c1:
+        pass
+    with c2:
+        pass
+    // we can use exact same widgets as above in with c1: block it will appear in column 
+
+-- expander:
+    - this will create expandable menu with good animations
+    with st.expander("Show instructions"):
+        st.write("""
+            1. step 1
+            2. step 2
+            3. step 3
+        """)
+
 
 -- conditions:
     if (st.button):
