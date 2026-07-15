@@ -1,6 +1,9 @@
 streamlit is a framework works on python code, python's declarative code.
 doesn't need html/css/js only pure python.
 
+-- run project
+    streamlit run main.py
+
 -- related to text:
     st.title("")
     st.subheader("")

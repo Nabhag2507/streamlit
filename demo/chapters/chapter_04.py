@@ -11,3 +11,14 @@ def c4():
         df = pd.read_csv(file)
         st.subheader("Data preview")
         st.dataframe(df)
+
+    if file:
+        st.subheader("Stats summary")
+        st.write(df.describe())
+
+    if file:
+        cities = df["City"].unique()
+        selected_city = st.selectbox("Select city ", cities)
+        new_df = df[df["City"] == selected_city]
+
+        st.write(new_df)
