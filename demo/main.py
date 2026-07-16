@@ -4,11 +4,13 @@ import chapters.chapter_03 as chapter_03
 import chapters.chapter_04 as chapter_04
 import chapters.chapter_05 as chapter_05
 import projects.p1_chai_maker as chai_maker
+import projects.p2_age_calculator as age_calculator
 
 # chapter_01.first_demo()
 # chapter_02.make_chai()
 # chapter_03.c3()
-chapter_05.c5()
+# chapter_05.c5()
 
 
 # chai_maker.make_chai()
+age_calculator.age_calculator()
